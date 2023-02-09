@@ -1,0 +1,58 @@
+Überprüfen Sie das korrekte Funktioineren mit dem hello-world Image:
+docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+2db29710123e: Pull complete 
+Digest: sha256:aa0cc8055b82dc2509bed2e19b275c8f463506616377219d9642221ab53cf9fe
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+--------------
+
+Ermitteln Sie die installierte Version von Docker:
+
+docker version
+Client: Docker Engine - Community
+ Version:           20.10.23
+ API version:       1.41
+ Go version:        go1.18.10
+ Git commit:        7155243
+ Built:             Thu Jan 19 17:45:08 2023
+ OS/Arch:           linux/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.23
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.18.10
+  Git commit:       6051f14
+  Built:            Thu Jan 19 17:42:57 2023
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.6.15
+  GitCommit:        5b842e528e99d4d4c1686467debf2bd4b88ecd86
+ runc:
+  Version:          1.1.4
+  GitCommit:        v1.1.4-0-g5fd4c4d
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+
+
+
+Welche Container laufen auf der virtuellen Maschine:
+
+docker ps
+CONTAINER ID   IMAGE                           COMMAND        CREATED       STATUS          PORTS                                                           NAMES
+2cd9b983b1db   portainer/portainer-ce:latest   "/portainer"   6 weeks ago   Up 15 minutes   8000/tcp, 9000/tcp, 0.0.0.0:9443->9443/tcp, :::9443->9443/tcp   portainer
+
+
+Welche Images findes Sie auf der Maschine:
+docker images
+REPOSITORY               TAG       IMAGE ID       CREATED         SIZE
+portainer/portainer-ce   latest    5f11582196a4   2 months ago    287MB
+hello-world              latest    feb5d9fea6a5   16 months ago   13.3kB
