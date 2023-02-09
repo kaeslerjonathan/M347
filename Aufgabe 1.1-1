@@ -1,0 +1,15 @@
+# M347
+
+Welche Problematik löst Docker?
+-> es erfordert keine extra Tools, es wird keine VM benötigt mit all den Elementen, die diese enthält, Docker enthält nur das nötigste und ist schlank
+-> man kann Docker quasi überall laufen und das Problem kommt nicht hervor das man Docker nur auf einem Ort laufen kann
+
+Worin liegt der Unterschied zwischen einer VM und einem Container?
+-> Vms haben ein eigenes Betriebssystem, Docker nur die nötigen Frameworktools
+
+Erklären Sie die Begriffe «Docker Image», «Dockerfile», «Docker Container» und «Docker Registry»
+-> DockerImage: Schreibgeschützte Vorlage mit dem Speicherabbild eines Containers.
+-> Dockerfiles: die benutzt werden um Container zu bauen(bauanleitung für ein Image
+-> Docker Container: Aktive Instanz eines Images.
+-> Docker Registry: Verwaltet Repositories. z.B. DockerHub, Ablage
+
